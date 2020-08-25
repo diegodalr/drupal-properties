@@ -1,0 +1,8 @@
+name: isobar_dev
+type: module
+description: Module extensi�on for ISOBAR site.
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:rest

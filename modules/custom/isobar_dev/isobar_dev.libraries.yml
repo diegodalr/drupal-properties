@@ -1,0 +1,9 @@
+# Custom module library for general purposes.
+resources.rest:
+  js:
+    js/isobar-dev.js: {}
+  css:
+    component:
+      css/isobar-dev.css: {}
+  dependencies:
+    - core/drupalSettings

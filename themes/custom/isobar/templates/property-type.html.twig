@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a property type.
+ *
+ * Available variables:
+ * - $title: Property type title.
+ * - $description: Property type description.
+ * - $properties: View with the 10 latest properties related to the current property type.
+ */
+#}
+<div class="property-type">
+  <h2 class="title">{{ title }}</h2>
+  <p class="description">{{ description }}</p>
+  <div class="properties">{{ render_view('section_properties', 'block_1', id) }}</div>
+</div>

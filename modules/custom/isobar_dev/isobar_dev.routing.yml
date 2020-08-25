@@ -1,0 +1,20 @@
+isobar_dev.home:
+  path: '/home'
+  defaults:
+    _title: 'Home'
+    _controller: '\Drupal\isobar_dev\Controller\IsobarHomeController::build'
+  requirements:
+    _permission: 'access content'
+
+isobar_dev.property_type:
+  path: '/tipo-inmueble/{taxonomy_term}'
+  defaults:
+    _title: 'Interna de tipo de inmueble'
+    _controller: '\Drupal\isobar_dev\Controller\IsobarPropertyTypeController::build'
+  options:
+    parameters:
+      taxonomy_term:
+        type: entity:taxonomy_term
+  requirements:
+    _entity_access: 'taxonomy_term.view'
+    taxonomy_term: \d+

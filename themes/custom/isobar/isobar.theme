@@ -6,3 +6,19 @@
  *
  * Place your custom PHP code in this file.
  */
+
+/**
+ * Implements hook_theme().
+ */
+function isobar_theme($existing, $type, $theme, $path) {
+  return [
+    'property_type' => [
+      'variables' => [
+        'id' => '',
+        'title' => '',
+        'description' => '',
+      ],
+      'template' => 'property-type'
+    ],
+  ];
+}
